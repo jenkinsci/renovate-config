@@ -18,4 +18,18 @@ We recommend moving it to `.github/renovate.json` if it is not already there.
     }
     ```
 3. That's it. Renovate will now use the custom configuration preset.
-4. 
+
+## Development
+
+Before committing, run:
+
+```sh
+npm install
+npm test
+```
+
+This triggers the [config validation](https://docs.renovatebot.com/config-validation/) to ensure the configuration is valid.
+
+## References
+
+- [Renovate Documentation](https://docs.renovatebot.com/)

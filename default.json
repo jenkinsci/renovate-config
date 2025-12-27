@@ -5,14 +5,23 @@
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
     "security:openssf-scorecard",
-    "schedule:monthly"
+    "schedule:monthly",
+    "abandonments:recommended",
+    ":configMigration",
+    "security:minimumReleaseAgeNpm"
   ],
-  "dependencyDashboardTitle": "Renovate Dependency Dashboard",
-  "dependencyDashboardLabels": ["dependencies"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>The parent configuration is located in [jenkinsci/renovate-config](https://github.com/jenkinsci/renovate-config); Renovate logs for debug [here](https://developer.mend.io/{{platform}}/{{repository}}).",
-  "minimumReleaseAge": "3 days",
   "rollbackPrs": true,
   "labels": ["dependencies"],
-  "configMigration": true,
-  "rebaseWhen": "conflicted"
+  "rebaseWhen": "conflicted",
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
+  ]
 }
