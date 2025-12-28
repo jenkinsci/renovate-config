@@ -21,11 +21,10 @@ We recommend moving it to `.github/renovate.json` if it is not already there.
 
 ## Development
 
-Before committing, run:
+Before committing, install [NodeJS](https://nodejs.org/en/download) (or use [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating))  then run:
 
 ```sh
-npm install
-npm test
+npx --yes --package renovate -- renovate-config-validator --strict
 ```
 
 This triggers the [config validation](https://docs.renovatebot.com/config-validation/) to ensure the configuration is valid.
