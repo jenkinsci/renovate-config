@@ -4,7 +4,6 @@
     "config:recommended",
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
-    "security:openssf-scorecard",
     "schedule:monthly",
     "abandonments:recommended",
     ":configMigration",
