@@ -3,7 +3,6 @@
   "extends": [
     "config:recommended",
     ":semanticCommitsDisabled",
-    ":separateMultipleMajorReleases",
     "schedule:monthly",
     "abandonments:recommended",
     ":configMigration",
