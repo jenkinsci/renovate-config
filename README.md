@@ -17,7 +17,19 @@ We recommend moving it to `.github/renovate.json` if it is not already there.
       ]
     }
     ```
-3. That's it. Renovate will now use the custom configuration preset.
+
+3. By extending from `github>jenkinsci/renovate-config` any usage of `enabledManagers` will disable the default managers.
+   Unless there is a specific reason to do so, `enabledManagers` should be removed.
+
+    ```json5
+    # remove this
+    "enabledManagers": [
+      "customManager1",
+      "customManager2"
+    ]
+    ```
+  
+4. That's it. Renovate will now use the custom configuration preset.
 
 ## Development
 
