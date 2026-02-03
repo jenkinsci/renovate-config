@@ -3,6 +3,28 @@
 This repository contains a custom configuration preset for Jenkins plugins.
 
 ## Usage
+
+### On-boarding renovate
+
+1. Create a new file `.github/renovate.json` containing:
+
+    ```json5
+    {
+      "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+      "extends": [
+        "github>jenkinsci/renovate-config"
+      ]
+    }
+    ```
+
+2. Run a manual scan on your repository from the [mend.io developer portal]( https://developer.mend.io/github/jenkinsci) by selecting "Run Renovate Scan".
+
+<img width="702" height="286" alt="image" src="https://github.com/user-attachments/assets/1eff3bd2-d0de-470b-89f3-001e606d2993" />
+
+3. That's it. Renovate will now use the custom configuration preset.
+
+### Existing renovate configuration
+
 1. Check to see if you have a `renovate.json` already. It can be in any of these [possible locations](https://docs.renovatebot.com/getting-started/installing-onboarding/#configuration-location).
 
 We recommend moving it to `.github/renovate.json` if it is not already there.
