@@ -9,7 +9,7 @@
     "test": "renovate-config-validator --strict --no-global default.json"
   },
   "devDependencies": {
-    "renovate": "43.40.0"
+    "renovate": "43.46.3"
   },
   "homepage": "https://github.com/jenkinsci/renovate-config",
   "repository": {
