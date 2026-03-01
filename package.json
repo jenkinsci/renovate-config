@@ -6,7 +6,7 @@
   "files": [],
   "private": "true",
   "scripts": {
-    "test": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator --strict"
+    "test": "renovate-config-validator --strict --no-global default.json"
   },
   "devDependencies": {
     "renovate": "42.96.3"
