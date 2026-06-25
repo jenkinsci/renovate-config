@@ -8,6 +8,13 @@
     ":configMigration",
     "security:minimumReleaseAgeNpm"
   ],
+  "packageRules": [
+    {
+      "description": "Allow very large updates of plugin BOM",
+      "matchPackageNames": ["io.jenkins.tools.bom:bom-*"],
+      "maxMajorIncrement": 30000
+    }
+  ],
   "postUpdateOptions": ["yarnDedupeHighest"],
   "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>The parent configuration is located in [jenkinsci/renovate-config](https://github.com/jenkinsci/renovate-config); Renovate logs for debug [here](https://developer.mend.io/{{platform}}/{{repository}}).",
   "labels": ["dependencies"],
