@@ -4,7 +4,6 @@
     "config:recommended",
     ":semanticCommitsDisabled",
     "schedule:monthly",
-    "abandonments:recommended",
     ":configMigration",
     "security:minimumReleaseAgeNpm"
   ],
