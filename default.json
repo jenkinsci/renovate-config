@@ -4,7 +4,8 @@
     "config:recommended",
     ":semanticCommitsDisabled",
     ":configMigration",
-    "security:minimumReleaseAgeNpm"
+    "security:minimumReleaseAgeNpm",
+    ":gitSignOff"
   ],
   "schedule": [
     "every 2 weeks on monday"
