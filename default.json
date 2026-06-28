@@ -12,7 +12,7 @@
     {
       "description": "Allow very large updates of plugin BOM",
       "matchPackageNames": ["io.jenkins.tools.bom:bom-*"],
-      "maxMajorIncrement": 30000
+      "maxMajorIncrement": 0
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"],
