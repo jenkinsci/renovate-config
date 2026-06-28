@@ -3,9 +3,11 @@
   "extends": [
     "config:recommended",
     ":semanticCommitsDisabled",
-    "schedule:monthly",
     ":configMigration",
     "security:minimumReleaseAgeNpm"
+  ],
+  "schedule": [
+    "every 2 weeks on monday"
   ],
   "packageRules": [
     {
