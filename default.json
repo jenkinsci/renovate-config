@@ -5,6 +5,7 @@
     ":semanticCommitsDisabled",
     ":configMigration",
     "security:minimumReleaseAgeNpm",
+    "helpers:pinGitHubActionDigests",
     ":gitSignOff"
   ],
   "schedule": [
