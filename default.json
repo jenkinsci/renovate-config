@@ -5,6 +5,7 @@
     ":semanticCommitsDisabled",
     ":configMigration",
     "security:minimumReleaseAgeNpm",
+    "security:minimumReleaseAgePypi",
     "helpers:pinGitHubActionDigests",
     ":gitSignOff"
   ],
